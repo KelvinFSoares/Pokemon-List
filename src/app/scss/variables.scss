@@ -1,0 +1,47 @@
+$breakpoints: (
+  small : 480px,
+  medium: 700px,
+  large : 1024px
+);
+
+$p-font-sizes: (
+  null  : 15px,
+  small : 16px,
+  medium: 17px,
+  large : 18px
+);
+
+$h1-font-sizes: (
+  null  : 28px,
+  small : 31px,
+  medium: 33px,
+  large : 36px
+);
+
+$h2-font-sizes: (
+  null  : 24px,
+  small : 27px,
+  medium: 29px,
+  large : 32px
+);
+
+/** COLORS */
+$primary-a0: #ffffff;
+$primary-a10: #d4e4fd;
+$primary-a20: #a8c9fa;
+$primary-a30: #74aff7;
+$primary-a50: #2196f3;
+$primary-a60: #266eb0;
+$primary-a70: #224972;
+$primary-a80: #182739;
+$primary-a90: #000000;
+
+$secondary-a0: #ffffff;
+$secondary-a10: #d6dde1;
+$secondary-a20: #adbcc3;
+$secondary-a30: #869ca7;
+$secondary-a50: #607d8b;
+$secondary-a60: #485d67;
+$secondary-a70: #313e44;
+$secondary-a80: #1c2225;
+$secondary-a90: #000000;
