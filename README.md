@@ -2,8 +2,7 @@
 
 ## Author
 
-Kelvin Soares
-kelvin.fe.soares@gmail.com
+Name: Kelvin Soares | Email: kelvin.fe.soares@gmail.com
 
 ## Setup
 
