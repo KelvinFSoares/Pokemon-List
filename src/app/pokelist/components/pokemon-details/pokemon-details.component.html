@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="header">
+    <div class="back-btn-container">
+      <img src="assets/icons/ic_arrow_back.svg" />
+      <a routerLink="/"
+         class="back-btn">Back</a>
+    </div>
+    <h1 class="page-title">Pokemon Details</h1>
+  </div>
+
+  <div class="details-card">
+    <div *ngIf="selectedPokemon === undefined; else pokeDetailsBlock">
+      <h2 class="txt-center">Pokemon Not Found</h2>
+    </div>
+    <ng-template #pokeDetailsBlock>
+      <h2 id="pokemon-name">Name: {{selectedPokemon?.name}}</h2>
+      <p id="pokemon-weight-height">Weight: {{selectedPokemon?.weight}} / Height: {{selectedPokemon?.height}}</p>
+      <div>
+        <h4>Stats:</h4>
+        <ul>
+          <li *ngFor="let stats of selectedPokemon?.stats"><b>{{stats.stat.name}}:</b> {{stats.base_stat}}</li>
+        </ul>
+      </div>
+      <div class="image-container">
+        <img src="{{selectedPokemon?.sprites?.front_default}}"
+             alt="pokemon {{selectedPokemon?.name}} front">
+        <img src="{{selectedPokemon?.sprites?.back_default}}"
+             alt="pokemon {{selectedPokemon?.name}} back">
+      </div>
+    </ng-template>
+
+  </div>
+</div>
